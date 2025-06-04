@@ -1,6 +1,7 @@
 import pandas as pd
 from typing import Optional
 
+
 def get_category(item_id: str) -> Optional[str]:
 
     try:
@@ -38,6 +39,7 @@ def get_category(item_id: str) -> Optional[str]:
         print(f"Детали ошибки: {str(e)}")
         return None
 
+
 def check_product_category(item_id: str) -> None:
 
     try:
@@ -69,6 +71,7 @@ def check_product_category(item_id: str) -> None:
     except Exception as e:
         print(f"Ошибка при проверке категории: {e}")
         print(f"Детали ошибки: {str(e)}")
+
 
 def main() -> None:
 
